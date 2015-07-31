@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "淘宝统计成交记录",
+	"description": "淘宝网统计成交记录",
+	"version": "1.0",
+	"permissions": [
+    	"http://*/*","https://*/*"
+  	],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": [ "joy_taobaototal.js"]
+    }],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": ""
+  }
+}
